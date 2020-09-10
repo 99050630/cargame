@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>CarGame</title>
+    </head>
+    <body>
+        <h2 id="question_id"></h2>
+        <p id="score_id">0</p>
+        <div class="leftcar" id="leftcar_id">
+            <div id="carleft_info">
+                Ford Mustang GT
+            </div>
+            <div class="answerButton"><button type="button" onclick="checkAnswer('m')">Mustang!</button></div>
+        </div>
+        <div class="rightcar" id="rightcar_id">
+            <div id="carright_info">
+                Ferrari 458
+            </div>
+            <div class="answerButton"><button type="button" onclick="checkAnswer('f')">Ferrari</button></div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+    <style>
+        html, body{
+            padding: 0;
+            margin: 0;
+        } 
+        #question_id{
+            width: 100%;
+            position: absolute;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #FFF;
+        }
+        #score_id{
+            width: 100%;
+            position: absolute;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            color: #FFF;
+            margin-top: 60px;
+        }
+        
+        div.leftcar{
+            float: left;
+            width: 50%;
+            height: 100%;
+            box-sizing: border-box;
+            background-color: red;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+        div.rightcar{
+            float: right;
+            width: 50%;
+            height: 100%;
+            box-sizing: border-box;
+            background-color: green;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+        div#carright_info, div#carleft_info{
+            margin: auto;
+            width: 200px;
+            margin-top: 300px;
+            color: #FFF;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        div.answerButton{
+            margin: auto;
+            width: 200px;
+        }
+            button{  
+                width: 200px;
+                padding: 10px 8px;
+                border: 1px solid white;
+                background: transparent;
+                color: #FFF;
+                margin-top: 20px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+                button:hover{  
+                    transform: scale(1.05);
+                }
+    </style>
+</html>
